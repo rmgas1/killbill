@@ -8,8 +8,6 @@ CREATE DOMAIN mediumtext AS text;
 DROP DOMAIN IF EXISTS mediumblob CASCADE;
 CREATE DOMAIN mediumblob AS bytea;
 
-CREATE OR REPLACE LANGUAGE plpgsql;
-
 CREATE OR REPLACE FUNCTION last_insert_id() RETURNS BIGINT AS $$
     DECLARE
         result BIGINT;
